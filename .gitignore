@@ -1,0 +1,8 @@
+.venv
+dist
+__pycache__/
+.idea/
+.coverage
+coverage.*
+bin
+lib
