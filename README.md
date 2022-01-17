@@ -11,3 +11,6 @@ You play with the computer with 1 card each.
 
 ### Levels
 Complicated Game: Time Limit Game (soon)
+добавить индивидуализацию игрока по имени
+добавить уровни + выбор игрока уровня (по-умолчанию самый простой)
+добавить рейтинг игроков (по уровням сложности)
