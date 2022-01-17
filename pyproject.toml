@@ -17,4 +17,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-start-game = "lotto_game.scripts.lotto_game:hello"
+start-game = "lotto_game.scripts.start_game:start"
