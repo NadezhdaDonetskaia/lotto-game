@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import random
-from get_form_card import get_form_card
+from .get_form_card import get_form_card
 
 
 class LottoCard:
     def __init__(self, name):
         self.name = name
-        self.list = self.fill_card(get_form_card())
         self.nums = []
+        self.list = self.fill_card(get_form_card())
 
     def __str__(self):
         card_str = f'{self.name}:\n{"-" * 26}\n'
@@ -39,7 +39,7 @@ class LottoCard:
                     billet[i][j] = ' '
         return billet
 
-    def _cross_out_num_(self, num):
+    def cross_out_num(self, num):
         for i in range(3):
             for j in range(9):
                 if num == self.list[i][j]:
