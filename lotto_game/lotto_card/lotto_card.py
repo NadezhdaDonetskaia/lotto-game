@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import random
 from .get_form_card import get_form_card
 
@@ -7,11 +6,11 @@ class LottoCard:
     def __init__(self, name):
         self.name = name
         self.nums = []
-        self.list = self.fill_card(get_form_card())
+        self.card = self.fill_card(get_form_card())
 
     def __str__(self):
         card_str = f'{self.name}:\n{"-" * 26}\n'
-        for line in self.list:
+        for line in self.card:
             card_str += f'{" ".join(str(x).ljust(2) for x in line)}\n'
         return card_str
 
@@ -42,7 +41,7 @@ class LottoCard:
     def cross_out_num(self, num):
         for i in range(3):
             for j in range(9):
-                if num == self.list[i][j]:
-                    self.list[i][j] = '--'
+                if num == self.card[i][j]:
+                    self.card[i][j] = '--'
                     self.nums.remove(num)
                     break

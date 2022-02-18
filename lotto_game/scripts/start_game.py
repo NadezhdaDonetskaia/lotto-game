@@ -1,14 +1,9 @@
 #!/usr/bin/env python
-from ..lotto_game import LottoGame
-from ..lotto_card.lotto_card import LottoCard
-
-player1 = LottoCard('Gamer')
-player2 = LottoCard('Comp')
-game = LottoGame(player1, player2)
+from ..game_engine import game_engine
 
 
 def start():
-    game.start()
+    game_engine.start()
 
 
 if __name__ == '__main__':
