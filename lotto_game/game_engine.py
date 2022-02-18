@@ -1,7 +1,7 @@
-from .lotto_game import LottoGame
-from .level_games.simple import SimpleLottoGame
-from .level_games.middle import MiddleLottoGame
-from .level_games.hard import HardLottoGame
+from lotto_game.lotto_games.lotto_game import LottoGame
+from lotto_game.lotto_games.level_games.simple import SimpleLottoGame
+from lotto_game.lotto_games.level_games.middle import MiddleLottoGame
+from lotto_game.lotto_games.level_games.hard import HardLottoGame
 from .lotto_card.lotto_card import LottoCard
 
 
