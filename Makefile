@@ -2,16 +2,16 @@ install:
 	poetry install
 	
 start-game:
-    poetry run start-game
+	poetry run start-game
     
 build:
-    poetry build
+	poetry build
 	
 publish:
-    poetry publish --dry-run
+	poetry publish --dry-run
 
 package-install:
-    python3 -m pip install --user --force-reinstall dist/*.whl
+	python3 -m pip install --user --force-reinstall dist/*.whl
 	
 make lint:
 	poetry run flake8 lotto-game

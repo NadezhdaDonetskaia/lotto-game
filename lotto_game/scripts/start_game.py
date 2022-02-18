@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-from ..game_engine import game_engine
+from lotto_game import game_engine
 
 
 def start():
-    game_engine.start()
+    game = game_engine()
+    game.start()
 
 
 if __name__ == '__main__':

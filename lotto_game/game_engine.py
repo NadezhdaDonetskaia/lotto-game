@@ -6,9 +6,8 @@ from .lotto_card.lotto_card import LottoCard
 
 
 def game_engine():
-    player = LottoCard(input('Давай знакомиться: '))
-    computer = LottoCard('Computer')
-    print(f'Добро пожаловать в игру лото, {player}!\n'
+    player_name = input('Давай знакомиться: ')
+    print(f'Добро пожаловать в игру лото, {player_name}!\n'
           f'Твоя задача - зачеркнуть все числа в карточке раньше компьютера.\n'
           f'Тебе нужны внимательность, скорость (если уровень посложнее) и удача.\n')
     level = input('Выберем уровень:\n'
@@ -17,6 +16,8 @@ def game_engine():
                   '2 - средний, 10 секунд на ответ\n'
                   '3 - сложный, время на ответ будет сокращаться вместе с числами в карточке\n'
                   'На какой сложности играем? (0 по-умолчанию): ')
+    player = LottoCard(player_name)
+    computer = LottoCard('Computer')
     if level == '1':
         game = SimpleLottoGame(player, computer)
     elif level == '2':
