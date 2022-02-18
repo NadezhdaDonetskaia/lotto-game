@@ -8,6 +8,7 @@ def timer():
     print('\nВремя вышло, вы проиграли.')
     os._exit(1)
 
+
 class SimpleLottoGame(LottoGame):
     def rounds(self):
         time_round = 30
