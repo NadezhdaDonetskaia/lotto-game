@@ -7,7 +7,10 @@ You play with the computer with 1 card each.
 + If you did not notice on the card and did not cross out the dropped number - you lost :(
 
 ### Installation
-(soon)
+
+
+
+start-game
 
 ### Levels
    \\/ 0 - самый простой, у тебя неогранниченное время на ответ (по умолчанию)   
