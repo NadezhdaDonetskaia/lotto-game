@@ -1,5 +1,8 @@
-from lotto_game.lotto_games.lotto_game import LottoGame
+from lotto_game.lotto_games.level_games.simple import SimpleLottoGame, timer
 
 
-class MiddleLottoGame(LottoGame):
-    pass
+class MiddleLottoGame(SimpleLottoGame):
+
+    @timer(time=10)
+    def rounds(self):
+        super().rounds()

@@ -1,26 +1,30 @@
 import random
 import os
-from threading import Timer
+import threading
 from lotto_game.lotto_games.lotto_game import LottoGame
 
 
-def timer():
-    print('\nВремя вышло, вы проиграли.')
-    os._exit(1)
+def timer(time=30):
+    def decorator(func):
+        def wrapper(*args, **kwargs):
+            print(f"\nУ вас есть {time} секунд чтобы ввести ответ...\n")
+            t = threading.Thread(target=func, args=args, kwargs=kwargs, daemon=True)
+            t.start()
+            t.join(time)
+
+            if t.is_alive():
+                print("Время истекло. Вы проиграли")
+                return False
+            else:
+                return func(*args, **kwargs)
+
+        return wrapper
+
+    return decorator
 
 
 class SimpleLottoGame(LottoGame):
+    @timer()
     def rounds(self):
-        time_round = 30
-        t = Timer(time_round, timer)
-        n = random.choice(self.kegs)
-        self.kegs.remove(n)
-        t.start()
-        try:
-            print("У вас есть %d секунд чтобы ввести ответ...\n" % time_round)
-            player_answer = input(f'{self.player1}\n{self.player2}\n'
-                                  f'Бочонок {n} осталось {len(self.kegs)}\n'
-                                  f'Хотите зачеркнуть? y/n: ')
-            return self.is_correct_answer(player_answer, n)
-        finally:
-            t.cancel()
+        super().rounds()
+
