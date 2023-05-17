@@ -1,5 +1,4 @@
 import random
-# import math
 import threading
 from queue import Queue
 from lotto_game.lotto_games.level_games.simple import SimpleLottoGame
