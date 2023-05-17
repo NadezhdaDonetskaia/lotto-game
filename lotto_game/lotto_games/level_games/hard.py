@@ -1,4 +1,5 @@
 import random
+# import math
 import threading
 from queue import Queue
 from lotto_game.lotto_games.level_games.simple import SimpleLottoGame
@@ -7,8 +8,7 @@ from lotto_game.lotto_games.level_games.simple import SimpleLottoGame
 class HardLottoGame(SimpleLottoGame):
 
     def set_time(self):
-        remaining_percentage = len(self.kegs) / 90
-        self.time = int(self.time * remaining_percentage)
+        self.time = round((30 ** (1 / 89)) ** (len(self.kegs)-1), 2)
 
     def get_answer(self, number_keg):
         print(f"\nУ тебя есть {self.time} секунд чтобы ввести ответ...\n")
