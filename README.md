@@ -1,5 +1,8 @@
 ## **Lotto-game**
-This is the well known lotto game.
+##### Lotto Game: Command-Line Computerized Version.  
+Engage in a thrilling game of Lotto against the computer in a command-line interface.
+Mark off numbers as they are called, and be the first to cross out all the numbers to emerge as the winner. 
+Test your luck and strategy in this fast-paced game of chance. This is the well known lotto game.
 You play with the computer with 1 card each.
 
 ### Description
