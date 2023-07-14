@@ -1,4 +1,6 @@
-package = []
+package = [
+    { include = "lotto_game" },
+]
 
 [metadata]
 lock-version = "1.1"

@@ -6,11 +6,17 @@ You play with the computer with 1 card each.
 + If you crossed out all the numbers on the card before the computer - you won!!!
 + If you did not notice on the card and did not cross out the dropped number - you lost :(
 
-### Installation
+### How to install
 
+```
+docker build -t myapp .
+```
 
+### How to play
 
-start-game
+```
+docker run -it myapp
+```
 
 ### Levels
     0 - самый простой, у тебя неогранниченное время на ответ (по умолчанию)   
@@ -19,17 +25,7 @@ start-game
     3 - сложный, время на ответ будет сокращаться вместе с числами в карточке
 
 
-### How to install
 
-```
-python3 -m pip install --user --force-reinstall dist/*.whl
-```
-
-### How to play
-
-```
-start-game
-```
 ### Codeclimate
-[![Codeclimate](https://api.codeclimate.com/v1/badges/6baf5b0b5b3fcb777c96/maintainability)](https://codeclimate.com/github/Nella611/lotto-game/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/6baf5b0b5b3fcb777c96/test_coverage)](https://codeclimate.com/github/Nella611/lotto-game/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a544dba7e1007c7c63b3/maintainability)](https://codeclimate.com/github/Nella611/lotto-game/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a544dba7e1007c7c63b3/test_coverage)](https://codeclimate.com/github/Nella611/lotto-game/test_coverage)
