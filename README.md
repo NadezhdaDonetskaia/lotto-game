@@ -30,11 +30,6 @@ docker run -it myapp
 
 
 ### Codeclimate
-<<<<<<<
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/a544dba7e1007c7c63b3/maintainability)](https://codeclimate.com/github/Nella611/lotto-game/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a544dba7e1007c7c63b3/test_coverage)](https://codeclimate.com/github/Nella611/lotto-game/test_coverage)
-=======
-[![Codeclimate](https://api.codeclimate.com/v1/badges/6baf5b0b5b3fcb777c96/maintainability)](https://codeclimate.com/github/Nella611/lotto-game/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/6baf5b0b5b3fcb777c96/test_coverage)](https://codeclimate.com/github/Nella611/lotto-game/test_coverage)
-
->>>>>>>
